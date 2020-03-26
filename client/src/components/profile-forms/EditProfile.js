@@ -73,7 +73,7 @@ const EditProfile = ({
         <i className="fas fa-user" /> Add some changes to your profile
       </p>
       <small>* = required field</small>
-      <form className="form" onSubmit={onSubmit}>
+      <form className="form" onSubmit={e => onSubmit(e)}>
         <div className="form-group">
           <select name="status" value={status} onChange={onChange}>
             <option>* Select Professional Status</option>
